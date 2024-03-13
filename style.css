@@ -77,6 +77,8 @@ nav {
     background-color: var(--bg-color);
     margin: 1rem 0;
     border-radius: var(--border-radius-size);
+    position:sticky;
+    top:0px;
 }
 
 nav ul {
@@ -253,10 +255,14 @@ nav ul {
 .content-section article .booking-table-section h1 {
     font-size:2rem;
 }
+.content-section article .booking-table-section button a{
+    font-size:1.5rem;
+}
 .content-section article .booking-table-section button {
    border-radius: var(--border-radius-size);
    border:0.1rem solid white;
    background-color: var(--bg-color);
+
 }
 /* footer section */
 
