@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* Universal  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+:root{
+    
+    --btn-color:#BAFF39;
+    --bg-color:#495E57;
+    --text-color:#FFFFFF;
+    --border-radius-size:10px;
+}
+*::selection{
+    color:black;
+    background-color: var(--btn-color);
+}
+body{
+    background-color:rgb(240, 235, 235);
+    margin:3rem 5%;
+}
+
+/* Header section */
+header img{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    max-height:200px;
+}
+/* Navigation Section */
+nav{
+    background-color:var(--bg-color);
+    margin:1rem 0;
+    border-radius:var(--border-radius-size);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:1rem 3rem;
+    flex-wrap:wrap;
+    
+    padding:0.5rem;
+   
+    
+    list-style:none;
+    font-size:1.5rem;
+    
+}
+nav ul li a{
+
+    display:block;
+
+    text-decoration:none;
+    color:var(--text-color);
+    
+    padding:0.5rem;
+    border-radius:0.5rem;
+      
+}
+nav ul li a:hover{
+    color:black;
+    background-color: var(--btn-color); 
+    transition:all 0.5s;
+}
+
+/* Promotion Section */
+
+.promotion-section * {
+    text-align: center;
+    margin:1rem 0;
+}
+.promotion-section{
+    min-height:300px;
+    border-radius:var(--border-radius-size);
+
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6) ,
+      rgba(0, 0, 0, 0.6)
+    ) , url("Images/restaurant-interior.jpg") ;
+    
+    background-size: cover;
+    background-position: 0 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+    color:var(--text-color);
+    padding:1rem;
+
+}
+.promotion-section article p::first-letter , span{
+    font-size: 2rem;
+    color:var(--btn-color);
+    animation: change-color 1s linear infinite alternate ;
+}
+@keyframes change-color{
+    from{
+        /* color:var(--btn-color); */
+    }
+    to{
+        color:var(--bg-color);
+    }
+}
+
+
+/* .promotion-section:hover, 
+nav:hover{
+    box-shadow:  1px 1px 20px var(--btn-color);
+    transition: filter 5s;
+} */
+
+
